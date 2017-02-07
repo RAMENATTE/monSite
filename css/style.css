@@ -3,9 +3,118 @@
     font-family: 'Pattaya', sans-serif;
 }
 
+body {
+/*	height: 2000px;*/
+}
+
 /* MISE EN PAGE DE LA NAVBAR */
 #acceuil, #blog {
     font-size: 2em;
     margin-left: 25px;
 }
 
+/* MISE EN PAGE DU HEADER */
+
+#scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 5;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.scroll-out {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.contain {
+	width: 85%;
+	margin: auto;
+}
+
+#btnScroll {
+	margin: 15px 50px;
+}
+header {
+	margin-top: 2em;
+	height: 300px;
+}
+
+#header {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+#com> h1 {
+	font-size: 2.5em;
+}
+
+#com> h2 {
+	font-size: 1.8em;
+}
+
+.contact {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contact> p {
+	font-size: 1.4em;
+}
+
+#photo {
+	height: 250px;
+	width: 250px;
+	margin: 25px 25px;
+}
+
+/* MISE EN PAGE DU BODY */
+
+#web {
+	margin-top: 2em;
+}
+
+#article1, #article2, #article3, #article4, #article5, #article6 {
+	text-align: center;
+}
+
+.atout {
+	width: 75%;
+	margin: auto;
+}
+
+#titre1, #titre2 {
+	text-align: center;
+}
+
+/* MISE EN PAGE DU FOOTER */
+
+footer {
+	margin-top: 2em;
+}
+
+#cv> p {
+	margin: 0;
+}
+
+#coordonne> p {
+	margin: 0;
+}
+
+#lien> p {
+	margin: 0;
+}
+
+#cv, #coordonne, #lien {
+	text-align: center;
+}
