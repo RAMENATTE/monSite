@@ -21,7 +21,7 @@
 			<div id="lien" class="col s4">
 				<h5 class="white-text">Mes liens</h5>
 				<ul>
-					<li><a class="blue-text text-blue" href="#!">Facebook</a></li>
+					<li><a class="blue-text text-blue" href="#!"><span class="ion-social-facebook"></span> Facebook</a></li>
 					<li><a class="red-text text-red" href="#!">Gmail</a></li>
 				</ul>
 			</div>

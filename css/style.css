@@ -15,6 +15,10 @@ body {
 
 /* MISE EN PAGE DU HEADER */
 
+#serv {
+	font-size: 2em;
+}
+
 #scroll {
 	position: fixed;
 	top: 0;
@@ -80,12 +84,29 @@ header {
 
 /* MISE EN PAGE DU BODY */
 
+#image1 {
+	height: 250px;
+	width: 250px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#q {
+	height: 100%;
+	width: 100%;
+}
+
 #web {
 	margin-top: 2em;
 }
 
 #article1, #article2, #article3, #article4, #article5, #article6 {
 	text-align: center;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6 {
+	border: 2px solid #607d8b;
 }
 
 .atout {

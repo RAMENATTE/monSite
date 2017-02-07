@@ -17,6 +17,7 @@ include "includes/head.php";
 	<nav id="scroll" class="scroll-out">
 		<div class="nav-wrapper teal grey lighten-1">
 			<button id="btnScroll" class="right btn waves-effect waves-light" type="button" name="btnSub">Contact</button>
+			<span id="serv" class="right">Besoin de mes services? <span class="ion-arrow-right-c"></span></span>
 			<ul id="nav-mobile2" class="left hide-on-med-and-down">
 				<li><a id="acceuil" href="acceuil.php">Acceuil</a></li>
 				<li><a id="blog" href="blog.php">Blog</a></li>
@@ -56,7 +57,7 @@ include "includes/head.php";
 		</div>
 		
 		<div id="article1" class="col s4">
-			<img src="images/photo.png" alt="" />
+			<img class="z-depth-5" src="images/photo.png" alt="" />
 			<h5>Site vitrine.</h5>
 			<p>Un site dont le contenu reste statique dans le temps.</p>
 			<p>Je me charge d'y exposer vos produits et/ou services, </p>
@@ -67,8 +68,8 @@ include "includes/head.php";
 			</div>
 		</div>
 		<div id="article2" class="col s4">
-			<img src="images/photo.png" alt="" />
-			<h5>Site WordPress.</h5>
+			<img class="z-depth-5" src="images/photo.png" alt="" />
+			<h5><span class="ion-social-wordpress"></span> Site WordPress.</h5>
 			<p>Avec le système WordPress, vous gérez le contenu de votre site.</p>
 			<p>Via une interface dédiée, similaire à Word, </p>
 			<p>vous maîtrisez textes, images, </p>
@@ -78,7 +79,9 @@ include "includes/head.php";
 			</div>
 		</div>
 		<div id="article3" class="col s4">
-			<img src="images/photo.png" alt="" />
+			<div id="image1" class="z-depth-5">
+				<canvas id="q"></canvas>
+			</div>
 			<h5>Site personnalisé.</h5>
 			<p>Création de site sur mesure selon la demande</p>
 			<p>en restant dans le domaine du raisonnable.</p>
@@ -97,14 +100,14 @@ include "includes/head.php";
 		</div>
 		
 		<div id="article4" class="col s4">
-			<img src="images/photo.png" alt="" />
+			<img class="z-depth-5" src="images/photo.png" alt="" />
 			<h5>Montage PC.</h5>
 			<p>Une analyse de vos besoins me premettra</p>
 			<p>de définir l'équipement adéquate qui répondra à vos attente.</p>
 		</div>
 		
 		<div id="article5" class="col s4">
-			<img src="images/photo.png" alt="" />
+			<img class="z-depth-5" src="images/photo.png" alt="" />
 			<h5>Réparation.</h5>
 			<p>Changement de pièces défaillantes ou HS, </p>
 			<p>récupération de données (sans garantit de résultat), </p>
@@ -113,7 +116,7 @@ include "includes/head.php";
 		</div>
 		
 		<div id="article6" class="col s4">
-			<img src="images/photo.png" alt="" />
+			<img class="z-depth-5" src="images/photo.png" alt="" />
 			<h5>Nettoyage.</h5>
 			<p>Un Nettoyage interne de vos machines.</p>
 			<p>La micro poussière qui s'accumule tout au long des années </p>
