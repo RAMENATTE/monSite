@@ -1,0 +1,11 @@
+/* MISE EN PAGE DE LA FONT*/
+* {
+    font-family: 'Pattaya', sans-serif;
+}
+
+/* MISE EN PAGE DE LA NAVBAR */
+#acceuil, #blog {
+    font-size: 2em;
+    margin-left: 25px;
+}
+
