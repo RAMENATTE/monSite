@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 
 <html lang="fr-FR">
@@ -9,8 +10,8 @@
 		<link rel="stylesheet" href="css/ionicons.css">
         <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 

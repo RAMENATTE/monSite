@@ -1,16 +1,20 @@
 /* MISE EN PAGE DE LA FONT*/
 * {
-    font-family: 'Pattaya', sans-serif;
+	font-family: 'Pattaya', sans-serif;
 }
 
 body {
-/*	height: 2000px;*/
+	/*	height: 2000px;*/
+}
+
+.btn {
+	text-transform: inherit;
 }
 
 /* MISE EN PAGE DE LA NAVBAR */
 #acceuil, #blog {
-    font-size: 2em;
-    margin-left: 25px;
+	font-size: 2em;
+	margin-left: 25px;
 }
 
 /* MISE EN PAGE DU HEADER */
@@ -68,8 +72,11 @@ header {
 
 .contact {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+}
+
+#btnFixe {
+	margin-left: 2em;
 }
 
 .contact> p {
@@ -138,4 +145,339 @@ footer {
 
 #cv, #coordonne, #lien {
 	text-align: center;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+#info {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* MISE EN PAGE DU FORMULAIRE DE CONTACTE */
+
+#message::-webkit-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#message::-moz-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#message::-ms-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#message::-o-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#telephone::-webkit-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#telephone::-moz-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#telephone::-ms-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#telephone::-o-input-placeholder
+{
+  color:    #607d8b;
+}
+
+#lightbox {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	background-color: rgba(59, 59, 59, 0.75);
+	display: none;
+	z-index: 1000;
+}
+
+#lightbox-container {
+	width: 25%;
+	margin: 25px auto;
+	border: 5px solid #607d8b;
+	border-radius: 15px;
+}
+
+#haut {
+	text-align: center;
+	border-bottom: 2px solid #ffb74d;
+	border-top: 2px solid #ffb74d;
+	margin-top: 0.8em;
+}
+
+#haut> p {
+	font-size: 1.5em;
+}
+
+.input-field label {
+	color: #000;
+}
+
+#annule {
+	background-color: #ff1744;
+}
+
+/* MISE EN PAGE DU BLOG */
+
+#blogTrav {
+	font-size: 1.7em;	
+}
+
+#blogCont{
+	text-align: center;
+}
+
+/* MISE EN FORME ANIMATION */
+
+#anim{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 30%;
+}
+.containe {
+	position: relative;
+	margin: 155px auto;
+	width: 200px;
+}
+
+svg {
+	position: absolute;
+}
+svg ellipse {
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+svg:nth-of-type(1) ellipse {
+	stroke: #F1725D;
+	cx: 25px;
+	stroke-width: 3px;
+	-webkit-animation: jump 600ms infinite ease-in-out;
+	animation: jump 600ms infinite ease-in-out;
+	opacity: .7;
+	-webkit-animation-delay: 0ms;
+	animation-delay: 0ms;
+}
+svg:nth-of-type(2) ellipse {
+	stroke: #38BDAB;
+	cx: 65px;
+	stroke-width: 3px;
+	-webkit-animation: jump 600ms infinite ease-in-out;
+	animation: jump 600ms infinite ease-in-out;
+	opacity: .7;
+	-webkit-animation-delay: 75ms;
+	animation-delay: 75ms;
+}
+svg:nth-of-type(3) ellipse {
+	stroke: #9D30A5;
+	cx: 105px;
+	stroke-width: 3px;
+	-webkit-animation: jump 600ms infinite ease-in-out;
+	animation: jump 600ms infinite ease-in-out;
+	opacity: .7;
+	-webkit-animation-delay: 150ms;
+	animation-delay: 150ms;
+}
+svg:nth-of-type(4) ellipse {
+	stroke: #B779E2;
+	cx: 145px;
+	stroke-width: 3px;
+	-webkit-animation: jump 600ms infinite ease-in-out;
+	animation: jump 600ms infinite ease-in-out;
+	opacity: .7;
+	-webkit-animation-delay: 225ms;
+	animation-delay: 225ms;
+}
+svg:nth-of-type(5) ellipse {
+	stroke: #683893;
+	cx: 185px;
+	stroke-width: 3px;
+	-webkit-animation: jump 600ms infinite ease-in-out;
+	animation: jump 600ms infinite ease-in-out;
+	opacity: .7;
+	-webkit-animation-delay: 300ms;
+	animation-delay: 300ms;
+}
+svg:nth-of-type(6) ellipse {
+	fill: #333333;
+	opacity: .05;
+	rx: 0;
+	ry: 0;
+	cx: 25px;
+	cy: 48px;
+	-webkit-animation: shadow 600ms infinite ease-in-out;
+	animation: shadow 600ms infinite ease-in-out;
+	-webkit-animation-delay: 0ms;
+	animation-delay: 0ms;
+}
+svg:nth-of-type(7) ellipse {
+	fill: #333333;
+	opacity: .05;
+	rx: 0;
+	ry: 0;
+	cx: 65px;
+	cy: 48px;
+	-webkit-animation: shadow 600ms infinite ease-in-out;
+	animation: shadow 600ms infinite ease-in-out;
+	-webkit-animation-delay: 75ms;
+	animation-delay: 75ms;
+}
+svg:nth-of-type(8) ellipse {
+	fill: #333333;
+	opacity: .05;
+	rx: 0;
+	ry: 0;
+	cx: 105px;
+	cy: 48px;
+	-webkit-animation: shadow 600ms infinite ease-in-out;
+	animation: shadow 600ms infinite ease-in-out;
+	-webkit-animation-delay: 150ms;
+	animation-delay: 150ms;
+}
+svg:nth-of-type(9) ellipse {
+	fill: #333333;
+	opacity: .05;
+	rx: 0;
+	ry: 0;
+	cx: 145px;
+	cy: 48px;
+	-webkit-animation: shadow 600ms infinite ease-in-out;
+	animation: shadow 600ms infinite ease-in-out;
+	-webkit-animation-delay: 225ms;
+	animation-delay: 225ms;
+}
+svg:nth-of-type(10) ellipse {
+	fill: #333333;
+	opacity: .05;
+	rx: 0;
+	ry: 0;
+	cx: 185px;
+	cy: 48px;
+	-webkit-animation: shadow 600ms infinite ease-in-out;
+	animation: shadow 600ms infinite ease-in-out;
+	-webkit-animation-delay: 300ms;
+	animation-delay: 300ms;
+}
+
+@-webkit-keyframes jump {
+	40% {
+		-webkit-transform: translateY(20px) scale(1.3);
+		transform: translateY(20px) scale(1.3);
+		opacity: .9;
+	}
+	40% {
+		rx: 10px;
+		ry: 10px;
+		stroke-width: 3px;
+	}
+	45% {
+		rx: 15px;
+		ry: 7px;
+		stroke-width: 4px;
+	}
+	55% {
+		rx: 10px;
+		ry: 10px;
+	}
+}
+
+@keyframes jump {
+	40% {
+		-webkit-transform: translateY(20px) scale(1.3);
+		transform: translateY(20px) scale(1.3);
+		opacity: .9;
+	}
+	40% {
+		rx: 10px;
+		ry: 10px;
+		stroke-width: 3px;
+	}
+	45% {
+		rx: 15px;
+		ry: 7px;
+		stroke-width: 4px;
+	}
+	55% {
+		rx: 10px;
+		ry: 10px;
+	}
+}
+@-webkit-keyframes shadow {
+	45% {
+		opacity: .15;
+		rx: 10px;
+		ry: 3px;
+		-webkit-transform: translateY(5px) scale(1.3);
+		transform: translateY(5px) scale(1.3);
+	}
+}
+@keyframes shadow {
+	45% {
+		opacity: .15;
+		rx: 10px;
+		ry: 3px;
+		-webkit-transform: translateY(5px) scale(1.3);
+		transform: translateY(5px) scale(1.3);
+	}
+}
+
+/* MISE EN PAGE RESPONSIVE */
+
+@media screen and (max-width: 1450px){
+    
+    .contain {
+        width: inherit;
+    }
+    
+    .enleve {
+        display: none;
+    }
+    
+} 
+
+
+
+/* change le display de la div aprés la checkbox */
+/* donc affiche ou masque la lightbox */
+#lightbox-switch + div {
+	display:none;
+}
+
+#lightbox-switch:checked + div {
+	display:block;
+}
+
+.hide-if-no-js {
+	display: none;
+}
+
+label[for="lightbox-switch"] {
+	display: none;
+}
+
+.show-if-no-js {
+	display: initial !important;
 }

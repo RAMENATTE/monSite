@@ -18,12 +18,17 @@ include "includes/navbar.php";
 					<img src="images/photo.png" alt="" />
 				</div>
 				<div id="com" class="col s8">
-					<h3>Ramenatte David - Développeur / Intégrateur web</h3>
-					<h1>Création de site internet - Montmelas Saint Sorlin.</h1>
+                    <h3>Ramenatte David<span class="enleve"> - Développeur / Intégrateur web</span></h3>
+                    <h1>Création de site internet<span class="enleve"> - Montmelas Saint Sorlin</span></h1>
 					<h2>Réparation, nettoyage ou fabrication de pc sur mesure.</h2>
 					<div class="contact">
-						<p>Contactez moi!</p>
-						<button id="btnFixe" class="btn waves-effect waves-light" type="button" name="btnFixe">Contact</button>
+						<p>Besoin de mes services, contactez moi!</p>
+						<button id="btnFixe" class="btn waves-effect waves-light hide-if-no-js" type="button" name="btnFixe">
+								Contact
+						</button>
+						<label for="lightbox-switch" class="show-if-no-js">
+							Contact
+						</label>
 					</div>
 				</div>
 			</div>
@@ -66,9 +71,10 @@ include "includes/navbar.php";
 				<canvas id="q"></canvas>
 			</div>
 			<h5>Site personnalisé.</h5>
-			<p>Création de site sur mesure selon la demande</p>
-			<p>en restant dans le domaine du raisonnable.</p>
-			<p>Blog, site e-commerce...</p>
+			<p>Création de site sur mesure selon la demande,</p>
+            <p>avec ou sans base de données, tout en restant</p>
+			<p>dans le domaine du raisonnable et du réalisable</p>
+			<p>Blog, site e-commerce, reprise de site...</p>
 			<div class="atout teal brown lighten-2">
 				<p>Si internet est un élément qui pourrait aider au developpement de votre entreprise.</p>
 			</div>
