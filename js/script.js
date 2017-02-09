@@ -28,6 +28,9 @@ $('#annule').click(function(){
 	$('#lightbox').hide();//.css('display', 'none');
 });
 
+$('#bouton').click(function(){
+	$('#lightbox').hide();
+});
 
 $(document).ready(function() {
     $('textarea#message').characterCounter();
@@ -54,21 +57,3 @@ setInterval(function(){
 		return ret;
 	});
 },33);
-
-
-
-/*
-$('#form').submit(function(e){
-	var html;
-	e.preventDefault();
-	$('#anim').css('display','block');//on lance l'animation
-	$.post($(this).attr('action'), // On récupere l'action dans l'attribut action du formulaire
-		   $(this).serialize(), // On recupère les données 
-		   function(data){
-		alert(data);// on affiche le message reçu
-		html = data;
-		$('#anim').css('display','none');//on arrete l'animation
-	}
-		  );
-});
-*/

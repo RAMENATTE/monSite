@@ -22,12 +22,12 @@ include "includes/navbar.php";
                     <h1>Création de site internet<span class="enleve"> - Montmelas Saint Sorlin</span></h1>
 					<h2>Réparation, nettoyage ou fabrication de pc sur mesure.</h2>
 					<div class="contact">
-						<p>Besoin de mes services, contactez moi!</p>
+						<p id="besoin">Besoin de mes services, contactez moi!</p>
 						<button id="btnFixe" class="btn waves-effect waves-light hide-if-no-js" type="button" name="btnFixe">
 								Contact
 						</button>
-						<label for="lightbox-switch" class="show-if-no-js">
-							Contact
+						<label id="btnCont" for="lightbox-switch" class="show-if-no-js">
+							<a id="btnCont2" href="formulaire_nojs.php">Contact</a>
 						</label>
 					</div>
 				</div>

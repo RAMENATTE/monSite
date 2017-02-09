@@ -45,13 +45,13 @@
 <input id="lightbox-switch" type="checkbox" style="display:none">
 <div id="lightbox"<?php if($traitementMail) : ?> style="display: block;"<?php endif; ?>>
 	<div id="lightbox-container" class="teal grey lighten-1">
+			<?php if(!$traitementMail || $erreurGlobale) : ?>
 		<div id="haut" class="teal orange lighten-4">
 			<p>Laissez-moi vos coordonnées et un eventuel message.</p>
 			<p>Je répond sous 48h.</p>
 		</div>
 		
 		<div class="row">
-			<?php if(!$traitementMail || $erreurGlobale) : ?>
 			<form id="form" class="col s12" action="includes/contact.php" method="post">
 			<?php if ($erreurGlobale) : ?>
 				<div style="text-align: center; background-color: red;">
@@ -71,7 +71,7 @@
 					<p>Selectionnez une prestation</p>
 				<?php endif; ?>
 				<?php if ($erreurMessage) : ?>
-					<p>Entrez un message de cinquante caractère minimum</p>
+					<p>Entrez un message de cinquante caractères minimum</p>
 				<?php endif; ?>
 				</div>
 			<?php endif; ?>
@@ -143,7 +143,26 @@
 			</form>
 			<?php endif; // affichage form ?>
 			<?php if ($traitementMail && $success) : ?>
-			Bravo
+			<div id="reponse" class="row">
+					<div class="col s12">
+						<p class="mailSend">Votre email à bien été envoyé.</p>
+						<p class="mailSend">Je vous répond le plus rapidement possible.</p>
+						<p class="mailSend">Merci de votre confiance.</p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
+					<div class="col s6 right">
+						<button id="bouton" class="btn waves-effect waves-light" type="button" name="action2">Retour à l'accueil <span class="ion-thumbsup"></span></button>
+					</div>
+				</div>
+				<style>
+					footer {
+						margin-top: inherit;
+					}
+				</style>
 			<?php endif; ?>
 			
 			<div id="anim" class='containe'>
